@@ -235,7 +235,6 @@ footer button:hover{
 
     display: flex;
     justify-content: space-evenly;
-    border: solid darkblue;
     width: 35vw;
     position: relative;
     top: 25vh;
