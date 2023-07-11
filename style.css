@@ -33,6 +33,10 @@ header ul{
     font-size: 2vw;
 }
 
+nav a:hover{
+    opacity: 0.83;
+}
+
 figure{
     width: 25vw;
     display: flex;
@@ -65,18 +69,23 @@ section{
     
 }
 
-section h1{
-font-family: 'Nunito', sans-serif;
-font-size: 5vh;
-width: 45vw;
-color: #242424;
-text-align-last: left;
+
+section article{
+
+
 height: 25vh;
-line-height: 7vh;
+width: 43vw;
+}
+
+
+section p{
+font-family: 'Nunito', sans-serif;
+font-size: 4.5vh;
+color: #242424;
 
 }
 
-section button{
+section input{
 
     width: 20vw;
     height: 6vh;
@@ -97,13 +106,16 @@ width: 10vw;
 
 }
 
-button:hover{
+input:hover{
+  transform: scale(1.01);
+
+   
     background-color: #FCA60F;
     transition-duration: 0,4s;
 }
 
 main figure img:hover{
-    scale: 1.05;
+    transform: scale(1.1);
 }
 
 footer{
@@ -139,6 +151,107 @@ footer figure{
 footer button:hover{
     scale: 1.1;
 }
+
+
+
+        @media(max-width:839px){
+            
+        
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+    
+    }
+
+    header figure{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35vw;
+        height: 35vh;
+        position: relative;
+        top: 6vh
+    }
+
+    header nav{
+
+        
+        width: 50vw;
+    }
+
+    main{
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        
+    }
+    
+    main section{
+
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:center;
+        flex-wrap: nowrap;
+    }
+
+    .copo{
+
+        display:none;
+    }
+
+    article{
+
+        width: 80vw;
+        height: 40vh;
+    }
+
+    main p{
+
+        font-size: 3vh;
+        width: 50vw;
+        height: 15vh;
+    
+        line-height: 4.5vh;
+        text-align: center;
+
+    }
+
+    main input{
+
+        width: 30vw;
+        font-size:4vw;
+
+    }
+
+   main figure{
+
+    display: flex;
+    justify-content: space-evenly;
+    border: solid darkblue;
+    width: 35vw;
+    position: relative;
+    top: 25vh;
+   }
+   
+    footer{
+
+        display: none;
+    }
+
+    
+
+    
+
+}
+    
 
 
 
